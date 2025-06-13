@@ -7,3 +7,16 @@
     }
   ]
 }
+// No static.json, adicione:
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html",
+      "status": 200,
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
+      }
+    }
+  ]
+}
